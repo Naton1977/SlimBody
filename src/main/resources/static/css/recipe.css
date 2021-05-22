@@ -1,0 +1,124 @@
+#headerRecipe {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 1.6vw;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#buttonAllRecipe {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#recipe {
+    display: flex;
+    margin-top: 20px;
+    border: 2px solid gainsboro;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 20px;
+}
+
+#titleRecipeHeader {
+    width: 60%;
+}
+
+#weightRecipeHeader {
+    width: 40%;
+}
+
+#titleRecipe {
+    width: 95%;
+    border-radius: 5px;
+}
+
+#products {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 95%;
+    padding-bottom: 15px;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: black;
+}
+
+#tableRecipe {
+    border-collapse: collapse;
+}
+
+#containerRecipeProductSearch {
+    position: absolute;
+    z-index: 1;
+}
+
+#tfootRecipe {
+    margin-top: 20px;
+}
+
+#saveRecipe {
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#allRecipeHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 1.6vw;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#buttonComeBack {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#containerAllRecipe {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-height: 30px;
+    border: 1px solid black;
+    display: flex;
+}
+
+#allRecipe1 {
+    width: 50%;
+    text-align: left;
+}
+
+#allRecipe2 {
+    width: 50%;
+    text-align: left;
+}
+
+#showRecipeHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 1.6vw;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#showRecipeButtonComeBack {
+     cursor: pointer;
+     border-radius: 5px;
+ }
+#showRecipeTable{
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#showRecipeTable td{
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+}

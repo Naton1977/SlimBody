@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(194, 215, 78);
+    display: flex;
+}
+
+header img {
+    width: 5%;
+}
+
+header div:first-of-type {
+    font-family: "Brush Script MT", fantasy;
+    font-size: 4vw;
+    margin-left: 3%;
+}
+
+header div:nth-of-type(2) {
+    font-style: italic;
+    font-family: Tahoma, fantasy;
+    font-size: 2vw;
+    margin-top: 3%;
+}
+
+#item1 {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 25px;
+    background-color: rgb(238, 213, 71);
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+
+#item1a {
+    background-color: rgb(245, 243, 229);
+    text-align: center;
+    width: 7.5%;
+    cursor: pointer;
+    border-width: 1px 1px 0 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px 5px 0 0;
+}
+
+#item1b {
+    text-align: center;
+    width: 9%;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    margin-left: 3px;
+}
+
+#item1c {
+    text-align: center;
+    width: 9%;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    margin-left: 3px;
+}
+
+#item1d {
+    text-align: center;
+    width: 16%;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    margin-left: 3px;
+}
+
+#item1e {
+    text-align: center;
+    width: 19%;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    margin-left: 3px;
+}
+
+#item1f {
+    text-align: center;
+    width: 8%;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    margin-left: 3px;
+}
+
+#mainContainer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#column1 {
+    background-color: rgb(245, 243, 229);
+    border-width: 0 1px 1px 1px;
+    border-color: black;
+    border-style: solid;
+    width: 70%;
+    min-height: 100vh;
+}
+
+#column2 {
+    border: 1px solid black;
+    width: 30%;
+    min-height: 100vh;
+}
+
+#formDC {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 45%;
+    height: 400px;
+    text-align: center;
+}
+
+#formDC p:first-of-type {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#formDC label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#formDC p:nth-of-type(2) {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#formDC p:nth-of-type(2) span {
+    margin-left: 5px;
+}
+
+#formDC p:nth-of-type(3) {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#formDC p:nth-of-type(3) span {
+    margin-left: 5px;
+}
+
+#formDC p:nth-of-type(4) {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#formDC p:nth-of-type(4) span {
+    margin-left: 5px;
+}
+
+#formDC p:nth-of-type(5) {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#prompt {
+    margin-left: 5px;
+}
+
+#resultDC {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+#userLogin {
+    margin-left: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#userCalorieContent {
+    margin-left: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#textFP {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#dateFP {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#formParameters {
+    margin-top: 60px;
+}
+
+#formParameters input {
+    margin-top: 10px;
+
+}
+#containerLogout{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#logout{
+    text-decoration: none;
+    font-size: 18px;
+    color: darkorchid;
+}
+
+#item9 {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    text-align: right;
+    background-color: rgb(194, 215, 78);
+}
+
+#item9a {
+    width: 70%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#copy {
+    width: 30%;
+    font-size: 25px;
+}
+
+#year {
+    font-family: 'Dancing Script', cursive;
+    border-style: solid;
+    border-width: 7px 0 0 0;
+    border-color: white;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(194, 215, 78);
+}

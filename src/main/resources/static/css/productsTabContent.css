@@ -1,0 +1,134 @@
+
+* {
+    box-sizing: border-box;
+}
+
+#productsDiv1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 1.6vw;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+#productsDiv2 {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+
+#table {
+    table-layout: fixed;
+    margin-left: 5px;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+#table td {
+    border: 1px solid black;
+    height: 30px;
+}
+
+#tbody {
+    border: 1px solid black;
+}
+
+
+#productsTable table tfoot {
+    font-weight: bold;
+}
+
+#productsTable table tfoot td:first-of-type {
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+#productsTable table tfoot td:last-of-type {
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: black;
+    padding-right: 15px;
+}
+
+#navigationContainer div {
+    border: 1px solid black;
+    height: 18px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#firstPage {
+    width: 50px;
+}
+
+#lastPage {
+    width: 70px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.navigationWidth {
+    width: 20px;
+}
+
+#search {
+    padding-top: 5px;
+    text-align: right;
+    margin-top: 20px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: black;
+    margin-left: 5px;
+    padding-right: 15px;
+}
+
+#newProductButton {
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#newProductHead {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+#tableNewProduct {
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#tableNewProduct td {
+    border: 1px solid black;
+}
+
+#tableNewProduct tfoot tr td {
+    text-align: right;
+}
+
+#addNewProductButton {
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#newProductTfoot td {
+    border-width: 0 0 1px 0;
+}
+
+#backUp {
+    margin-left: 50px;
+}

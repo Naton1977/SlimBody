@@ -1,0 +1,138 @@
+
+#pageDietHead {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.pageDietTable {
+    border-collapse: collapse;
+    margin-left: 10px;
+}
+
+.pageDietThead td {
+    border-width: 2px 0 1px 0;
+    border-color: black;
+    border-style: solid;
+    font-weight: bolder;
+}
+
+#containerProductSearch {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 0 2px 0;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100px;
+}
+
+#time {
+    border-radius: 5px;
+    text-align: center;
+}
+
+#productSearch {
+    margin-left: 12px;
+}
+
+#inputSearch {
+    border-radius: 5px;
+}
+
+#description {
+    font-style: italic;
+    opacity: 75%;
+}
+
+#inputWeight {
+    border-radius: 5px;
+}
+
+#SubmitSearch {
+    color: #FFFFFF;
+    font-weight: bolder;
+    height: 28px;
+    margin-left: 20px;
+    margin-top: -2px;
+    border-radius: 5px;
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+#selectProductName {
+    position: absolute;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#pageDietTBody tr:nth-child(odd) {
+    background-color: rgb(238, 238, 236);
+}
+
+#pageDietTFoot tr:nth-child(odd) {
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    border-color: #909090;
+    background-color: rgb(238, 238, 236);
+}
+
+@media screen and (max-width: 900px) {
+    header img{
+        display: none;
+    }
+
+
+    #item1a {
+        width: 80%;
+        font-size: 200%;
+    }
+
+
+    #item1b {
+        display: none;
+    }
+
+    #item1c {
+        display: none;
+    }
+
+    #item1d {
+        display: none;
+    }
+
+    #item1e {
+        display: none;
+    }
+
+    #column1 {
+        width: 100%;
+    }
+
+    #column2 {
+        display: none;
+    }
+
+    #containerDietaryRation {
+        display: none;
+    }
+    #item9{
+        display: none;
+    }
+    #year{
+        display: none;
+    }
+    #time{
+        font-size: 60%;
+    }
+
+}

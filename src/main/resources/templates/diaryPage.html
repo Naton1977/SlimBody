@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaryPage</title>
+    <link rel="stylesheet" th:href="@{/css/diaryPage.css}">
+    <link rel="stylesheet" th:href="@{/fonts/fontawesome-free-5.14.0-web/css/all.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/calendar.css}">
+    <script type="text/javascript" th:src="@{/js/calendar.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bodyParameterPage.js}"></script>
+    <script type="text/javascript" th:src="@{/js/addFigureParameters.js}"></script>
+    <script type="text/javascript" th:src="@{/js/productsTab.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/productsTabContent.css}">
+    <script type="text/javascript" th:src="@{/js/addDietTab.js}"></script>
+    <script type="text/javascript" th:src="@{/js/recipe.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/dietTab.css}">
+    <link rel="stylesheet" th:href="@{/css/recipe.css}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <img th:src="@{/image/label.jpg}" alt="">
+    <div>SLIM BODY</div>
+    <div>диетический дневник</div>
+</header>
+<div id="item1">
+    <div id="item1a">Рацион</div>
+    <div id="item1b">Продукты</div>
+    <div id="item1c">Рецепты</div>
+    <div id="item1d">Ваши параметры</div>
+    <div id="item1e">Ваша калорийность</div>
+</div>
+<div id="main">
+    <div id="mainContainer">
+        <div id="column1"></div>
+        <div id="column2">
+            <div id="userLogin" >Вы вошли как :&nbsp;<span id="login" th:text="${#authentication.name}"></span></div>
+            <div id="containerLogout">Для выхода нажмете : <a id="logout" th:href="@{/logout}">выход</a>
+            </div>
+            <div id="userCalorieContent">Ваша дневная калорийность :<span id="DCResult" th:text="${calorieContent}"></span>&nbsp;
+                Ккал
+            </div>
+            <div style="margin-left: 5px"><em>(Для отображения заполните форму)</em></div>
+            <div id="calendar_table"></div>
+            <form id="form-submit-product" method="post" th:action="@{/api/v1/product/creat}"></form>
+        </div>
+    </div>
+</div>
+<form id="form-logout" method="post" th:action="@{/logout}"></form>
+<div id="item9">
+    <div id="item9a">SLIM BODY</div>
+    <div><i class="far fa-copyright" id="copy"></i></div>
+</div>
+<div id="year">2020</div>
+<script>
+    $("#logout").click((e) => {
+        e.preventDefault();
+        $("#form-logout").submit();
+    })
+</script>
+</body>
+
+</body>
+</html>

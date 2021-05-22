@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/registerPage.css}">
+    <title>regisregPage</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img th:src="@{/image/label.jpg}" alt="">
+    <div>SLIM BODY</div>
+    <div>диетический дневник</div>
+</header>
+<div id="item1"></div>
+
+<main>
+    <div id="mainInput">
+        <form modelAttribute="userDto" th:action="@{/registerPage/save}" method="post">
+            <p><u>Регистрация пользователя</u></p><br>
+            <p>Введите логин</p>
+            <div>
+                <input type="text" th:value="${userDto.userLogin}" name="userLogin"/>
+            </div>
+<!--            <form:errors path="userLogin" cssClass="error"/>-->
+            <p>Введите пароль</p>
+            <div>
+                <input type="password" id="password" th:value="${userDto.userPassword}" name="userPassword"/>
+            </div>
+<!--            <form:errors path="userPassword" cssClass="error"/>-->
+            <p>Повторите пароль</p>
+            <div>
+                <input type="password" id="confirmPassword" th:value="${userDto.confirmPassword}" name="confirmPassword"/>
+            </div>
+<!--            <form:errors path="confirmPassword" cssClass="error"/>-->
+            <p>Введите email</p>
+            <div>
+                <input id="mail" th:value="${userDto.userEmail}" name="userEmail"/>
+            </div>
+<!--            <form:errors path="userEmail" cssClass="error"/>-->
+            <p></p>
+            <input type="submit">
+        </form>
+    </div>
+</main>
+<div id="item1a"></div>
+<div id="footer">
+    <div id="footer1">SLIM BODY</div>
+    <div><i class="far fa-copyright" id="copyFooter"></i></div>
+</div>
+
+<div id="yearFooter">2020</div>
+
+</body>
+</html>

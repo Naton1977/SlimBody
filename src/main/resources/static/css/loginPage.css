@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(194, 215, 78);
+    display: flex;
+}
+
+header img{
+    width: 10%;
+}
+
+header div:first-of-type {
+    font-family: "Brush Script MT", fantasy;
+    font-size: 7vw;
+    margin-left: 3%;
+}
+header div:nth-of-type(2) {
+    font-style: italic;
+    font-family: Tahoma, fantasy;
+    font-size: 2vw;
+    margin-top: 10%;
+}
+#item1 {
+    height: 20px;
+    background-color: rgb(238, 213, 71);
+}
+#item1a {
+    height: 20px;
+    background-color: rgb(238, 213, 71);
+}
+main{
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+#mainInput{
+    display: flex;
+    width: 500px;
+    min-height: 300px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 243, 229);
+}
+form{
+    font-size: 1.6vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+#footer {
+    background-color: rgb(245, 243, 229);
+    border: 4px solid white;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    text-align: right;
+}
+
+#footer1 {
+    width: 70%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#copyFooter {
+    width: 30%;
+    font-size: 25px;
+}
+
+#yearFooter {
+    background-color: rgb(245, 243, 229);
+    border: 4px solid white;
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 50px;
+}
+@media screen and (max-width: 900px) {
+    header{
+        display: none;
+    }
+    #item1a{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+    #yearFooter{
+        display: none;
+    }
+    #mainInput label{
+        font-size: 150%;
+    }
+}

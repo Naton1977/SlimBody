@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+    <link rel="stylesheet" th:href="@{/css/loginPage.css}">
+</head>
+<body>
+<header>
+    <img th:src="@{/image/label.jpg}" alt="">
+    <div>SLIM BODY</div>
+    <div>диетический дневник</div>
+</header>
+<div id="item1"></div>
+
+<main>
+    <div id="mainInput">
+        <form method="post" th:action="@{/login}">
+        <label><u>Вход пользователя</u></label><br>
+        <p></p>
+        <label for="login">Введите логин <br>
+            <p></p><input name="login" type="text" id="login"></label><br>
+        <p></p>
+        <label for="password">Введите пароль<br>
+            <p></p><input name="password" type="password" id="password"></label><br>
+        <p></p>
+        <input type="submit">
+        <div>
+            <c:if test="${param.enter == 'failure'}">
+                <p style="color: #FF0000">Неверный логин или пароль</p>
+            </c:if>
+            <c:if test="${param.logout == 'success'}">
+                <p style="color: green">Вы успешно вышли !!!</p>
+            </c:if>
+        </div>
+        </form>
+    </div>
+</main>
+<div id="item1a"></div>
+<div id="footer">
+    <div id="footer1">SLIM BODY</div>
+    <div><i class="far fa-copyright" id="copyFooter"></i></div>
+</div>
+
+<div id="yearFooter">2020</div>
+
+</body>
+</html>
