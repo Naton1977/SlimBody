@@ -29,21 +29,21 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
 
-        http.authorizeRequests().antMatchers("/**", "/login", "/logout").permitAll();
-
         http.authorizeRequests().antMatchers("/diaryPage").access("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
 
         http.authorizeRequests().antMatchers("/bodyParameters/**").access("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
 
         http.authorizeRequests().antMatchers("/api/v1/product/**").access("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
 
-        http.authorizeRequests().and().formLogin()
+        http.authorizeRequests().antMatchers("/**", "/login", "/logout").permitAll();
+
+        http.formLogin()
                 .loginPage("/login")
                 .defaultSuccessUrl("/diaryPage")
-                .failureUrl("/login?enter=failure")
+                .failureUrl("/login?error=true")
                 .usernameParameter("login")
-                .passwordParameter("password");
-//                .and().logout().logoutUrl("/login").logoutSuccessUrl("/login?logout=success");
+                .passwordParameter("password")
+                .and().logout().logoutSuccessUrl("/login?logout=success");
 
     }
 

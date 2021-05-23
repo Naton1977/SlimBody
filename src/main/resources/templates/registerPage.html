@@ -35,7 +35,8 @@
             </div>
             <p>Повторите пароль</p>
             <div>
-                <input type="password" id="confirmPassword" th:value="${userDto.confirmPassword}" name="confirmPassword"/>
+                <input type="password" id="confirmPassword" th:value="${userDto.confirmPassword}"
+                       name="confirmPassword"/>
                 <div class="error" th:errors="*{userDto.confirmPassword}">Name Error</div>
             </div>
 
