@@ -45,7 +45,7 @@ public class HomeController {
 
     @GetMapping("/login")
     public String goLogin() {
-        return "loginPage";
+        return "login";
     }
 
 
