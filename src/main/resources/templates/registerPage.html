@@ -26,23 +26,24 @@
             <p>Введите логин</p>
             <div>
                 <input type="text" th:value="${userDto.userLogin}" name="userLogin"/>
+                <div class="error" th:errors="*{userDto.userLogin}">Name Error</div>
             </div>
-<!--            <form:errors path="userLogin" cssClass="error"/>-->
             <p>Введите пароль</p>
             <div>
                 <input type="password" id="password" th:value="${userDto.userPassword}" name="userPassword"/>
+                <div class="error" th:errors="*{userDto.userPassword}">Name Error</div>
             </div>
-<!--            <form:errors path="userPassword" cssClass="error"/>-->
             <p>Повторите пароль</p>
             <div>
                 <input type="password" id="confirmPassword" th:value="${userDto.confirmPassword}" name="confirmPassword"/>
+                <div class="error" th:errors="*{userDto.confirmPassword}">Name Error</div>
             </div>
-<!--            <form:errors path="confirmPassword" cssClass="error"/>-->
+
             <p>Введите email</p>
             <div>
                 <input id="mail" th:value="${userDto.userEmail}" name="userEmail"/>
+                <div class="error" th:errors="*{userDto.userEmail}">Name Error</div>
             </div>
-<!--            <form:errors path="userEmail" cssClass="error"/>-->
             <p></p>
             <input type="submit">
         </form>
